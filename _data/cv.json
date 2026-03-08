@@ -1,9 +1,9 @@
 {
   "basics": {
-    "name": "Youngseo Kim",
+    "name": "Youngseo",
     "email": "none@example.org",
     "phone": "",
-    "website": "https://youngseo0526.github.io",
+    "website": "https://academicpages.github.io",
     "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
       "address": "",
@@ -16,7 +16,12 @@
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=zuLC9P0AA"
+        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+      },
+      {
+        "network": "ORCID",
+        "username": "",
+        "url": "https://orcid.org/yourorcidurl"
       },
       {
         "network": "GitHub",
