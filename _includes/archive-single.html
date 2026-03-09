@@ -53,21 +53,21 @@
     {% endif %}
     
     {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.slidesurl }}">project page</a> | <a href="{{ post.bibtexurl }}">code</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.slidesurl }}">project page</a> | <a href="{{ post.bibtexurl }}">code</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.slidesurl }}">project page</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.slidesurl }}">project page</a></p>
     {% elsif post.citation and post.paperurl and post.bibtexurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.bibtexurl }}">code</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.bibtexurl }}">code</a></p>
     {% elsif post.citation and post.paperurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.paperurl }}">paper</a></p>
     {% elsif post.citation and post.slidesurl and post.bibtexurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.slidesurl }}">project page</a> | <a href="{{ post.bibtexurl}}">code</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.slidesurl }}">project page</a> | <a href="{{ post.bibtexurl}}">code</a></p>
     {% elsif post.citation and post.slidesurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.slidesurl }}">project page</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.slidesurl }}">project page</a></p>
     {% elsif post.citation and post.bibtexurl %}
-      <p>code{{ post.citation }}<br /><a href="{{ post.bibtexurl }}">code</a></p>
+      <p>{{ post.citation }}<br /><a href="{{ post.bibtexurl }}">code</a></p>
     {% elsif post.citation %}
-      <p>code{{ post.citation }}</p>
+      <p>{{ post.citation }}</p>
     {% elsif post.paperurl and post.bibtexurl %}
       <p><a href="{{ post.paperurl }}">paper</a> | <a href="{{ post.bibtexurl }}">code</a></p>
     {% elsif post.paperurl %}
