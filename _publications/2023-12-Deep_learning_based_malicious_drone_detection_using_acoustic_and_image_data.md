@@ -5,6 +5,6 @@ category: conferences
 permalink: /publication/Deep_learning_based_malicious_drone_detection_using_acoustic_and_image_data
 date: 2023-12-01
 venue: 'IEEE IRC'
-bibtexurl: 'https://ieeexplore.ieee.org/document/10023862'
+slidesurl: 'https://ieeexplore.ieee.org/document/10023862'
 citation: "Juann Kim, Dongwhan Lee, <strong>Youngseo Kim</strong>, Heeyeon Shin, Yeeun Heo, Yaqin Wang, Eric T. Matson"
 ---
