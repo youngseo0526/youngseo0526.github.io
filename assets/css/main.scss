@@ -41,3 +41,8 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+.greedy-nav .visible-links a,
+.masthead__menu-item a {
+  font-size: 0.9rem !important;
+}
