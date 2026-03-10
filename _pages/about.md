@@ -7,4 +7,14 @@ redirect_from:
   - /about.html
 ---
 
-I am MS student at KAIST, advised by professor Junyoung Noh in the [Visual Media Lab](https://vml.kaist.ac.kr/home).
+I am a MS student at KAIST, advised by professor Junyoung Noh in the [Visual Media Lab](https://vml.kaist.ac.kr/home).
+
+---
+permalink: /
+title: "Research Interest"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
