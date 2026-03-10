@@ -23,7 +23,7 @@ repository               : "youngseo0526/youngseo0526.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "IMG_8812.HEIC"
+  avatar           : "IMG_8812.jpg"
   name             : "Youngseo Kim"
   pronouns         : # example: "she/her"  
   bio              : "MS Student at KAIST"
