@@ -12,4 +12,7 @@ I am a MS student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>, advised by
 </p>
 
 ## Latest News
-- 2025.02: Paper accepted to <strong>CVPR 2026</strong>
+
+<ul style="font-size: 0.9rem; line-height: 1.7;">
+  <li>FEB 2025: Paper accepted to <strong>CVPR 2026</strong></li>
+</ul>
