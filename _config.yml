@@ -26,9 +26,9 @@ author:
   avatar           : "profile.png"
   name             : "Youngseo Kim"
   pronouns         : # example: "she/her"  
-  bio              : "MS Student"
+  bio              : "MS Student at KAIST"
   location         : "Korea, Deajeon"
-  employer         : "KAIST"
+  #employer         : "KAIST"
   uri              : # URL
   email            : "ysk@kaist.ac.kr" 
 
