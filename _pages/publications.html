@@ -47,6 +47,18 @@ author_profile: true
     color: #000;
   }
 
+  @media (min-width: 641px) {
+    .publication-card {
+      width: min(900px, calc(100% + 8rem), calc(100vw - 3rem));
+      gap: 1.5rem;
+    }
+
+    .publication-card__thumbnail {
+      flex-basis: 150px;
+      max-width: 150px;
+    }
+  }
+
   @media (max-width: 640px) {
     .publication-card {
       flex-direction: column;
@@ -88,5 +100,4 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
 

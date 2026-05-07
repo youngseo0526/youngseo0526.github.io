@@ -66,6 +66,21 @@ I am a MS student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>, advised by
     color: #000;
   }
 
+  @media (min-width: 641px) {
+    .selected-publications {
+      width: min(900px, calc(100% + 8rem), calc(100vw - 3rem));
+    }
+
+    .selected-publication {
+      gap: 1.5rem;
+    }
+
+    .selected-publication__thumbnail {
+      flex-basis: 150px;
+      max-width: 150px;
+    }
+  }
+
   @media (max-width: 640px) {
     .selected-publication {
       flex-direction: column;
