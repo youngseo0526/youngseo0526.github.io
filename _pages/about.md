@@ -150,6 +150,8 @@ I am a MS student at <a href="https://www.kaist.ac.kr/en/">KAIST</a>, advised by
         |
         <a href="https://github.com/youngseo0526/X-AVDT" target="_blank" rel="noopener noreferrer">code</a>
         |
+        <a href="https://huggingface.co/datasets/zaqxsw0526/MMDF" target="_blank" rel="noopener noreferrer">dataset</a>
+        |
         <a href="https://www.youtube.com/watch?v=ctbPMKSGmGM" target="_blank" rel="noopener noreferrer">video</a>
       </div>
       <br>
