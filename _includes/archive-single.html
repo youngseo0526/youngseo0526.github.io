@@ -14,6 +14,75 @@
 
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    {% if post.collection == 'publications' %}
+      {% capture publication_link %}
+        {% if post.projecturl %}
+          {{ post.projecturl }}
+        {% elsif post.paperurl %}
+          {{ post.paperurl }}
+        {% elsif post.codeurl %}
+          {{ post.codeurl }}
+        {% else %}
+          {{ base_path }}{{ post.url }}
+        {% endif %}
+      {% endcapture %}
+
+      <div class="publication-card">
+        {% if post.thumbnail %}
+          <a class="publication-card__thumbnail" href="{{ publication_link | strip }}" target="_blank" rel="noopener noreferrer">
+            <img src=
+              {% if post.thumbnail contains "://" %}
+                "{{ post.thumbnail }}"
+              {% else %}
+                "{{ post.thumbnail | prepend: "/images/" | prepend: base_path }}"
+              {% endif %}
+              alt="{{ title | strip_html }} thumbnail">
+          </a>
+        {% endif %}
+        <div class="publication-card__content">
+          <div class="publication-card__title">{{ title }}</div>
+          {% if post.citation %}
+            <div>{{ post.citation }}</div>
+          {% endif %}
+          <div>{{ post.venue }} {{ post.date | default: "1900-01-01" | date: "%Y" }}</div>
+          <div class="publication-card__links">
+            {% assign has_publication_link = false %}
+            {% if post.projecturl %}
+              <a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">project page</a>
+              {% assign has_publication_link = true %}
+            {% endif %}
+            {% if post.paperurl %}
+              {% if has_publication_link %} | {% endif %}
+              <a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">paper</a>
+              {% assign has_publication_link = true %}
+            {% endif %}
+            {% if post.codeurl %}
+              {% if has_publication_link %} | {% endif %}
+              <a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">code</a>
+              {% assign has_publication_link = true %}
+            {% endif %}
+            {% if post.videourl %}
+              {% if has_publication_link %} | {% endif %}
+              <a href="{{ post.videourl }}" target="_blank" rel="noopener noreferrer">video</a>
+              {% assign has_publication_link = true %}
+            {% endif %}
+            {% if post.modelurl %}
+              {% if has_publication_link %} | {% endif %}
+              <a href="{{ post.modelurl }}" target="_blank" rel="noopener noreferrer">model</a>
+              {% assign has_publication_link = true %}
+            {% endif %}
+            {% if post.dataseturl %}
+              {% if has_publication_link %} | {% endif %}
+              <a href="{{ post.dataseturl }}" target="_blank" rel="noopener noreferrer">dataset</a>
+            {% endif %}
+          </div>
+          {% if post.description %}
+            <br>
+            <p class="publication-card__description">{{ post.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    {% else %}
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -78,6 +147,7 @@
       <p><a href="{{ post.projecturl }}">project page</a></p>
     {% elsif post.codeurl %}
       <p><a href="{{ post.codeurl }}">code</a></p>
+    {% endif %}
     {% endif %}
 
   </article>
